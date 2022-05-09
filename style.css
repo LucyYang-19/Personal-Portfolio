@@ -1,0 +1,41 @@
+
+/* keeping overflow in control */
+* {
+    box-sizing: border-box;
+  }
+
+  /* home page */
+/* nav bar */
+    .menu { 
+     padding: 5%;
+     background-color: #D0D7DB;
+    
+    }
+
+  /* breaking the list */
+    ul{
+    
+     list-style-type: none;
+     display: inline-flex;  
+    }
+
+    li{
+        padding: 0% 2%;
+        justify-content: center;
+        width: 150%;
+    }
+
+    li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: monospace;
+        
+      }
+
+  /* formatting body */
+  .flex-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+  }
