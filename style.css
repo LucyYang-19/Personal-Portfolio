@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  * {
+    background-color: #D0D7DB;
+  }
+
   /* home page */
 /* nav bar */
     .menu { 
@@ -13,29 +17,36 @@
     }
 
   /* breaking the list */
-    ul{
-    
+    nav{
+    width: 100%;
+   
      list-style-type: none;
-     display: inline-flex;  
+     display: inline-flex; 
+      padding: 0% 2%; 
+      
     }
 
-    li{
-        padding: 0% 2%;
-        justify-content: center;
-        width: 150%;
+  .title {
+    margin: 10% 5%;
+  }
+
+   .navHome, .navPort, .navCon, .navAbt, .navResum{
+      margin: 10% 30%;
+      width: 100%;
+      color: black;
     }
 
-    li a {
-    text-decoration: none;
-    font-size: 24px;
-    font-family: monospace;
-        
-      }
+    nav a {
+      text-decoration: none;
+      font-size: 24px;
+      font-family: monospace;
+      color: black;
+        }
 
   /* formatting body */
   .flex-container{
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      flex-wrap: wrap;
      justify-content: space-around;
   }
