@@ -51,7 +51,134 @@
      justify-content: space-around;
   }
   
-  .heroImgs{
-    object-fit: scale-down;
-    object-position: -10000% 0;
+  /* animation (header or hero)*/
+  .animation{
+    height: 50%;
+  }
+
+  .logo {
+    font-size: 6em;
+    padding: 0 0.3em;
+    display: block;;
+  }
+  
+  /* styling the words itself */
+  .firstName {
+    margin: 5% 7% 0%;
+    background-color: #83c9ff07;
+    color: #000;
+  }
+  
+  .lastName {
+    margin: 0% 7% 0%;
+    background-color: transparent;
+    
+  }
+  
+  /* actual animations, the keyframe setting */
+  
+     .logo {
+      -webkit-animation-name: fadein;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: fadein;
+      -moz-animation-duration: 3s;
+      -ms-animation-name: fadein;
+      -ms-animation-duration: 3s;
+      -o-animation-name: fadein;
+      -o-animation-duration: 3s;
+      animation-name: fadein;
+      animation-duration: 3s;
+    }
+
+    @-webkit-keyframes fadein {
+      /* negative fades in from left and positive fades in from right */
+      0% { opacity: 0; margin-left: -20%; }
+      40% { opacity: 1; margin-left: 50%; }
+    }
+    
+    @-moz-keyframes fadein {
+      0% { opacity: 0; margin-left: -20%; }
+      0% { opacity: 1; margin-left: 50%; }
+    }
+    
+    @-ms-keyframes fadein {
+      0% { opacity: 0;  margin-left: -20%; }
+      0% { opacity: 1; margin-left: 50%; }
+    }
+    
+    @-o-keyframes fadein {
+      0% { opacity: 0;  margin-left: -20%; }
+      0% { opacity: 1; margin-left: 50%; }
+    }
+    
+    @keyframes fadein {
+      0% { opacity: 0;  margin-left: -20%; }
+      /* this bottom margin is how far off the screen the animation reaches */
+      0% { opacity: 1; margin-left: -30%; }
+    } 
+    
+
+    /* animations for the summary */
+    .quest {
+      margin: 2% 10% 0%;
+      background-color: #83c9ff07;
+      color: #000;
+    }
+    
+    .summary {
+      margin: 0% 10% 0%;
+      background-color: transparent;
+      
+    }
+    
+    /* actual animations, the keyframe setting */
+    
+       .welcome {
+        -webkit-animation-name: fadein;
+        -webkit-animation-duration: 3s;
+        -moz-animation-name: fadein;
+        -moz-animation-duration: 3s;
+        -ms-animation-name: fadein;
+        -ms-animation-duration: 3s;
+        -o-animation-name: fadein;
+        -o-animation-duration: 3s;
+        animation-name: fadein;
+        animation-duration: 3s;
+      }
+  
+      @-webkit-keyframes fadein {
+        /* negative fades in from left and positive fades in from right */
+        0% { opacity: 0; margin-left: -20%; }
+        40% { opacity: 1; margin-left: 50%; }
+      }
+      
+      @-moz-keyframes fadein {
+        0% { opacity: 0; margin-left: -20%; }
+        0% { opacity: 1; margin-left: 50%; }
+      }
+      
+      @-ms-keyframes fadein {
+        0% { opacity: 0;  margin-left: -20%; }
+        0% { opacity: 1; margin-left: 50%; }
+      }
+      
+      @-o-keyframes fadein {
+        0% { opacity: 0;  margin-left: -20%; }
+        0% { opacity: 1; margin-left: 50%; }
+      }
+      
+      @keyframes fadein {
+        0% { opacity: 0;  margin-left: -20%; }
+        /* this bottom margin is how far off the screen the animation reaches */
+        0% { opacity: 1; margin-left: -30%; }
+      } 
+      
+    /* formatting the body */
+     .summary a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .summary{
+    font-size: large;
   }
