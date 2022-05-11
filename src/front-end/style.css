@@ -58,7 +58,7 @@ nav a {
 
 /* animation (header or hero)*/
 .animation {
-  height: 50%;
+  height: 45vh;
 }
 
 .logo {
@@ -70,7 +70,7 @@ nav a {
 
 /* styling the words itself */
 .firstName {
-  margin: 5% 7% 0%;
+  margin: 6% 7% 0%;
   background-color: #83c9ff07;
   color: #000;
 }
@@ -96,68 +96,7 @@ nav a {
   animation-duration: 3s;
 }
 
-@-webkit-keyframes fadein {
 
-  /* negative fades in from left and positive fades in from right */
-  0% {
-    opacity: 0;
-    margin-right: -50%;
-  }
-
-  0% {
-    opacity: 1;
-    margin-right: 50%;
-  }
-}
-
-@-moz-keyframes fadein {
-  0% {
-    opacity: 0;
-    margin-right: -50%;
-  }
-
-  0% {
-    opacity: 1;
-    margin-right: 50%;
-  }
-}
-
-@-ms-keyframes fadein {
-  0% {
-    opacity: 0;
-    margin-right: -50%;
-  }
-
-  0% {
-    opacity: 1;
-    margin-right: 50%;
-  }
-}
-
-@-o-keyframes fadein {
-  0% {
-    opacity: 0;
-    margin-right: -50%;
-  }
-
-  0% {
-    opacity: 1;
-    margin-right: 50%;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    margin-right: -50%;
-  }
-
-  /* this bottom margin is how far off the screen the animation reaches */
-  0% {
-    opacity: 1;
-    margin-right: 30%;
-  }
-}
 
 
 /* animations for the summary */
@@ -193,55 +132,55 @@ nav a {
   /* negative fades in from left and positive fades in from right */
   0% {
     opacity: 0;
-    margin-left: -20%;
+    margin-left: -30%;
   }
 
   40% {
     opacity: 1;
-    margin-left: 50%;
+    margin-left: -30%;
   }
 }
 
 @-moz-keyframes fadein {
   0% {
     opacity: 0;
-    margin-left: -20%;
+    margin-left: -30%;
   }
 
   0% {
     opacity: 1;
-    margin-left: 50%;
+    margin-left: -30%;
   }
 }
 
 @-ms-keyframes fadein {
   0% {
     opacity: 0;
-    margin-left: -20%;
+    margin-left: -30%;
   }
 
   0% {
     opacity: 1;
-    margin-left: 50%;
+    margin-left: -30%;
   }
 }
 
 @-o-keyframes fadein {
   0% {
     opacity: 0;
-    margin-left: -20%;
+    margin-left: -30%;
   }
 
   0% {
     opacity: 1;
-    margin-left: 50%;
+    margin-left: -30%;
   }
 }
 
 @keyframes fadein {
   0% {
     opacity: 0;
-    margin-left: -20%;
+    margin-left: -30%;
   }
 
   /* this bottom margin is how far off the screen the animation reaches */
@@ -267,18 +206,34 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 5% 5%;
 }
 
 .header,
 .aboutMe,
 .resume,
 .portfolio {
-  margin: 5% 5%;
+  margin-left: 5%;
+  padding: 8% 7%; 
   height: 30vh;
   width: 50%;
-  background-color: rgb(33, 143, 108);
+  background-color: #b7c9d3;
 }
 
-footer {
-  margin: 5% 0%;
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  margin-left: 35%;
+  justify-content: space-around;
+ 
+ 
 }
+
+.middleFoot a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+
