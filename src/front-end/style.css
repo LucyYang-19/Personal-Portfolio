@@ -238,7 +238,7 @@ nav a {
 }
 
 
-/* icon */
+/* icons for footer */
 body {
   margin: 0;
   padding:0;
@@ -260,7 +260,7 @@ ul li {
 ul li a {
   width: 80px;
   height: 80px;
-  background-color: #fff;
+
   text-align: center;
   line-height: 80px;
   font-size: 35px;
@@ -281,7 +281,7 @@ ul li a .icon {
 }
 
 ul li a:hover .icon {
-  color: #fff;
+ 
   transform: rotateY(360deg);
 }
 
