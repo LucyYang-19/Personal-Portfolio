@@ -1,15 +1,17 @@
-/* keeping overflow in control */
+
+/* keeping overflow in control and styling html doc */
 * {
   box-sizing: border-box;
   background-color: #D0D7DB;
   scroll-behavior: smooth;
 }
 
+/* animation */
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* home page */
+
 /* nav bar */
 .menu {
   padding: 5%;
@@ -26,6 +28,38 @@ nav {
   padding: 0% 2%;
 
 }
+
+/* creatin the underlined animation */
+nav a{
+  /* deals with the color of underline and position */
+  color: rgb(0, 0, 0);
+
+  text-decoration: none;
+ 
+  display: inline-block;
+
+  position: relative;
+}
+
+nav a:after{
+  /* deals with the animation portion */
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(45, 7, 7);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
 
 .title {
   margin: 10% 5%;
@@ -98,7 +132,7 @@ nav a {
 
 
 
-
+/* home page body */
 /* animations for the summary */
 .quest {
   margin: 2% 10% 0%;
@@ -200,53 +234,103 @@ nav a {
   font-size: large;
 }
 
+
 /* body (actual hyperlinks)*/
 
 .boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 5% 5%;
-}
-
-.header,
-.aboutMe,
-.resume,
-.portfolio {
-  margin-left: 5%;
-  padding: 8% 7%; 
-  height: 30vh;
-  width: 50%;
-  background-color: #b7c9d3;
+  /* spaces out all 4 boxes */
+  /* margin: 1%; */
 }
 
 
+  /* background-color: #b7c9d3; */
 
-.footer {
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  margin-left: 35%;
-  justify-content: space-around;
- 
- 
+
+
+/* .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.middleFoot a{
-  text-decoration: none;
-  color: #000;
-}
-
-
-/* icons for footer */
-
-
-ul {
-  display: flex;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  height: 10vh;
+  width: 100%;
+   display: flex; 
+  flex-direction: row;
+  margin-left: 12%;
+  margin-bottom: 2%;
+}
+
+
+/* hyperlink for footer */
+.endFoot {
+  margin-left: 20%;
+}
+
+.endFoot a{
+  text-decoration: none;
+  color: #000;
+  width: 10vh;
+}
+
+/* icons for footer */
+.iconFoot{
+  margin-left:20%;
+  
+  
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  padding: .5%;
+  /* top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 ul li {
@@ -254,13 +338,11 @@ ul li {
 }
 
 ul li a {
-  width: 80px;
-  height: 80px;
-
+  width: 4vh;
+  height: 3vh;
   text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
+  font-size: 2vh;
+  margin: 0 1vh;
   display: block;
   border-radius: 50%;
   position: relative;
@@ -277,7 +359,6 @@ ul li a .icon {
 }
 
 ul li a:hover .icon {
- 
   transform: rotateY(360deg);
 }
 
@@ -307,6 +388,29 @@ ul li:nth-child(2) a:before{
 
 ul li:nth-child(3) a:before {
   background: #0077b5;
+} */
+
+/* icons in footer */
+.header a{
+  text-decoration: none;
+  color: #000;
+}
+
+.resume a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+.portfolio a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+.aboutMe a{
+  text-decoration: none;
+  color: #000;
 }
 
 
