@@ -248,12 +248,9 @@ nav a {
 
   /* background-color: #b7c9d3; */
 
-
-
-/* .image {
+  /* .aboutMe {
   opacity: 1;
   display: block;
-  width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -270,23 +267,63 @@ nav a {
   text-align: center;
 }
 
-.container:hover .image {
+.container:hover .aboutMe {
   opacity: 0.3;
 }
 
 .container:hover .middle {
-  opacity: 1;
+  opacity: 7;
 }
 
-.text {
+.abtTitle {
   background-color: #04AA6D;
-  color: white;
+  color: rgb(73, 21, 21);
   font-size: 16px;
   padding: 16px 32px;
-} */
+} */ */
 
+.aboutMe{
+  width: 20%;
+  height: 10%;
+  background-image: url("/src/imgs/workspace-1280538_640.jpg");
+}
 
+.aboutTitle
 
+/* <div class="aboutMe"></div>
+                   <div class="abtTitle"><a href="/src/pages/about.html">About</a></div>
+               
+                <div class="portfolio"></div>
+                    <div class="porTitle"><a href="/src/pages/port.html">Portfolio</a></div>
+               
+                <div class="resume"></div>
+                    <div class="middle">
+                    <div class="resTitle"><a href="/src/info/resume.html">Resume</a></div>
+               
+                <div class="header"></div>
+                    <div class="headTitle"><a href="/src/pages/contact.html">Contact</a></div>
+                 */
+/* reference */
+/* .pic{
+      width:400px;
+      height:217px;
+      background: url(http://www.corelangs.com/css/box/img/tiger.png) no-repeat;
+    }
+    .text{
+      width:340px;
+      height:217px;
+      background:#FFF;
+      opacity:0;
+    }
+    .pic:hover .text
+    {
+      opacity:0.6;
+      text-align:justify;
+      color:#000000;
+      font-size:20px;
+      font-weight:700;
+      font-family:"Times New Roman", Times, serif;
+      padding:30px; */
 
 
 
