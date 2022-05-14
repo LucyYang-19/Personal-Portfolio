@@ -7,70 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
     <link rel="stylesheet" href="/src/front-end/style.css">
-    <nav>
-        <div class="nav">
-
-            <nav class="navi">
-                <div class="title">LY</div>
-                <div class="navHome"><a href="/src/index.html">Home</a></div>
-                <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
-                <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
-                <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
-                <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
-
-            </div>
-    </nav>
+   
 </head>
 
-<body>
+<body>  
 
-    <div class="flex-container">
+<header>
 
-        <div class="animation">
-            <span class="logo firstName">Welcome!</span>
-            <span class="logo lastName">To my Personal Portfolio</span>
-        </div>
+    
+        <nav>
+                <div class="nav">
 
-        <div class="welcome">
-            <div class="quest">
-                <h1> Who Am I?</h1>
+                    <nav class="navi">
+                        <div class="title">LY</div>
+                        <div class="navHome"><a href="/src/index.html">Home</a></div>
+                        <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
+                        <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
+                        <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
+                        <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
+                    </nav>
+                </div>
+        </nav>
+
+    <div class="hero">
+            <div class="animation">
+                <span class="logo firstName">Welcome!</span>
+                <span class="logo lastName">To my Personal Portfolio</span>
             </div>
 
-            <div class="summary">
-                <p>Greetings, my name is Lucy Yang. I am currently a student at CART and Buchanan High School and I plan
-                    on
-                    pursuing a career in Software Development. This portfolio will tell you more about me and my
-                    projects, feel free to stay and explore.</p>
-                <p>Thank you for visiting my Portfolio! <strong><a href="/src/pages/about.html">Learn More about
-                            me!</a></strong></p>
+            <div class="welcome">
+                <div class="quest">
+                    <h1> Who Am I?</h1>
+                </div>
+                <div class="summary">
+                    <p>Greetings, my name is Lucy Yang. I am currently a student at CART and Buchanan High School and I plan
+                        on
+                        pursuing a career in Software Development. This portfolio will tell you more about me and my
+                        projects, feel free to stay and explore.</p>
+                    <p>Thank you for visiting my Portfolio! <strong><a href="/src/pages/about.html">Learn More about
+                                me!</a></strong></p>
+                </div>
             </div>
+    </div>
 
-        </div>
-
+</header>
         <!-- https://codepen.io/ssmkhrj/pen/MWjpWKp?editors=1100
         link for chosen hover -->
-
-        <!-- <div class="boxes">  -->
+ <div class="flex-container">
+<div class="boxes">  
       
+    <div class="first">
             <div class="container">
-                <img src="/src/imgs/fantasy-g01bee57e0_640.jpg" alt="About Me"  >
-                    <div class="overlay">
+                <div class="image"><img class="pot" src="/src/imgs/fantasy-g01bee57e0_640.jpg" alt="About Me" ></div>
+                    <div class="middle">
                      <div class="text"><a href="/src/pages/about.html">About</a></div>
                     </div>  
             </div>    
             
 
             <div class="container">
-               <img src="/src/imgs/tea-time-3240766_640.jpg" alt="Portfolio" height="0%">
-               <div class="overlay">
+                <div class="image"><img class="pot" src="/src/imgs/tea-time-3240766_640.jpg" alt="Portfolio" ></div>
+               <div class="middle">
                 <div class="text"><a href="/src/pages/port.html">Portfolio</a></div>
                 </div>
              </div>    
-    
+    </div>
 
+    <div class="second">
             <div class="container">
-                <img src="/src/imgs/notepad-gde1097708_640.jpg" alt="Resume">
-                <div class="overlay">
+                <div class="image"> <img class="pot" src="/src/imgs/notepad-gde1097708_640.jpg" alt="Resume"></div>
+                <div class="middle">
                     <div class="text"><a href="/src/pages/port.html">Resume</a></div>
             </div>
             </div>
@@ -78,13 +84,15 @@
 
                    
             <div class="container">
-              <img src="/src/imgs/books-g3e8692a04_640.jpg" alt="Contact">
-                    <div class="overlay">
+                <div class="image"> <img class="pot" src="/src/imgs/books-g3e8692a04_640.jpg" alt="Contact"></div>
+                    <div class="middle">
                   <div class="text"><a href="/src/pages/contact.html">Contact</a></div>
                 </div>
              </div>      
-<!--             
-        </div> -->
+         
+        </div> 
+    </div>
+ </div>
     
         <!-- <div class="container">
   <img src="img_avatar.png" alt="Avatar" class="image">
