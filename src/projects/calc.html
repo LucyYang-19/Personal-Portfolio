@@ -1,42 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
     <link rel="stylesheet" href="/src/front-end/style.css">
-    <nav>
-        <div class="nav">
-               
-         <nav class="navi">
-            <div class="title">LY</div>
-            <div class="navHome"><a href="/src/index.html">Home</a></div>
-            <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
-            <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
-            <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
-            <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
-
-         </ul>
-          </div>
-    </nav>
-</head>
-<body>
-    <div class="heroImgs"><img src="" alt="homeHero"></div>
-    <div class="block"></div>
-    <div class="calcimg"><img src="" alt="calcimg1"></div>
-    <div class="block2"></div>
    
-    <div class="abtCalc">
-       
-	While learning more about JavaScript, the class was assigned to create a functioning calculator. During the creation of the calculator, we used Github to maintain a repository over different browsers and Visual Studio Code to program and create the calculator. 
-	Using Mozilla as reference, we were able to design and create a functioning calculator. While creating this calculator, we learned how to use and connect forms (buttons and input) to the html or css file. This mini-project gave us a small peek into how using JavaScript would be like and how we would make use of the form objects. 
-	Before turning in this calculator, I wish I was able to finish it completely. It was only half functioning, like I was able to delete, input equations, and clear the calculator, but I wasn’t able to actually calculate anything. Some of those things were also the successes I had while making the calculator. On the day it was due, I was able to clear, delete, and input equations into the calculator, of course with the help of Mr. Fast, but I wasn’t able to calculate it. I knew how to fix it, just not how to go about it and so I ended up fixing it later. 
-	When we were first assigned to do the calculators, I had no idea on how to go about it and so I ended up collaborating with Jade and Brandon in order to obtain a stronger foundation. After, I continued investigating different ways on how to make the calculator actually work, even then I ended up going to Mr. Fast for help again. Upon searching for a while, I definitely had to persist because there were definitely times where I wanted to give up so much. After completing the calculator to the best of my ability, I reflected and occasionally went back to see how I could or could have improved it.
+</head>
 
+<body>  
+
+<header>
+
+    <div class="videoContainter">
+            <video autoplay muted loop class="bg">
+                <source src="/src/videos/video (1).mp4" type="video/mp4">
+            </video>
+
+            <div class="videoOverlay">
+              <nav>
+                <div class="nav">
+
+                    <nav class="navi">
+                        <div class="dropdown">
+                            <div class="title">LY</div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navHome"><a href="/src/index.html">Home</a></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
+                            <div class="dropdownContent">
+                                <a href="/src/projects/calc.html">Calculator</a>
+                                <a href="/src/projects/chrono.html">Chronoshift</a>
+                                <a href="/src/projects/game.html">Interactive Game Story</a>
+                                <a href="/src/projects/tour.html">Tourism Website</a>
+                            </div>
+                        </div>   
+
+                        <div class="dropdown">
+                            <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
+                        </div>
+
+                    </nav>
+                </div>
+        </nav>
+
+                <div class="hero">
+                        <div class="animation">
+                            <span class="logo firstName">Welcome!</span>
+                            <span class="logo lastName">To my Personal Portfolio</span>
+                        </div>
+
+                        <div class="welcome">
+                            <div class="quest">
+                                <h1> Who Am I?</h1>
+                            </div>
+                            <div class="summary">
+                                <p>Greetings, my name is Lucy Yang. I am currently a student at CART and Buchanan High School and I plan
+                                    on
+                                    pursuing a career in Software Development. This portfolio will tell you more about me and my
+                                    projects, feel free to stay and explore.</p>
+                                <p>Thank you for visiting my Portfolio! <strong><a href="/src/pages/about.html">Learn More about
+                                            me!</a></strong></p>
+                            </div>
+                        </div>
+                </div>
+
+              </div>
     </div>
+
+        
+</header>
+        
+       
+ <div class="flex-container">
+<div class="boxes">  
+      
+    <div class="first">
+            <div class="container">
+                <div class="image"><img class="pot" src="/src/imgs/bridge-gd357dc784_640.jpg" alt="About Me" ></div>
+                    <div class="middle">
+                     <div class="text"><a href="/src/pages/about.html">About</a></div>
+                    </div>  
+            </div>    
+            
+
+            <div class="container">
+                <div class="image"><img class="pot" src="/src/imgs/tea-time-3240766_640.jpg" alt="Portfolio" ></div>
+               <div class="middle">
+                <div class="text"><a href="/src/pages/port.html">Portfolio</a></div>
+                </div>
+             </div>    
+    </div>
+
+    <div class="second">
+            <div class="container">
+                <div class="image"> <img class="pot" src="/src/imgs/notepad-gde1097708_640.jpg" alt="Resume"></div>
+                <div class="middle">
+                    <div class="text"><a href="/src/info/resume.html">Resume</a></div>
+            </div>
+            </div>
     
 
+                   
+            <div class="container">
+                <div class="image"> <img class="pot" src="/src/imgs/books-g3e8692a04_640.jpg" alt="Contact"></div>
+                    <div class="middle">
+                  <div class="text"><a href="/src/pages/contact.html">Contact</a></div>
+                </div>
+             </div>      
+         
+        </div> 
+    </div>
+ 
+  
+    
 </body>
 
 <footer>
@@ -72,5 +163,6 @@
              
          
     </div>
-
+</div>
 </footer>
+</div>
