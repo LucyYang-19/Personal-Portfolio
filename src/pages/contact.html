@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio </title>
+    <title>Lucy Yang </title>
     <link rel="stylesheet" href="/src/front-end/style.css">
 
 </head>
@@ -83,8 +83,60 @@
           
      <div class="flex-container">
 
+    <div class="bod">
+        <div class="socialMedia">
+            <pre>
+            Email: Lucy.Yang@Student.Cart.Org
 
+            LinkedIn: <a href="https://www.linkedin.com/in/lucy-yang-47a852239/">Lucy Yang</a>
+        </pre>
+        </div>
 
+                <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+                    <table class="form-style">
+                        <tr>
+                        <td>
+                            <label>
+                                Your name <div class="required">*</div>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" class="long"/>
+                            <div class="error" id="errorname"></div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <label>
+                                Your email address <div class="required">*</div>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="email" name="email" class="long"/>
+                            <div class="error" id="erroremail"></div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <label>
+                                Message <div class="required">*</div>
+                            </label>
+                        </td>
+                        <td>
+                            <textarea name="message" class="long field-textarea"></textarea>
+                            <div class="error" id="errormsg"></div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Send">      
+                            <input type="reset" value="Reset"> 
+                        </td>
+                        </tr>
+                    </table>
+                </form>
+        </div>
 
         
       <footer>
