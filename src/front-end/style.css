@@ -2,7 +2,7 @@
 /* keeping overflow in control and styling html doc */
 * {
   box-sizing: border-box;
-  background-color: #D0D7DB;
+  
   scroll-behavior: smooth;
 }
 /* 
@@ -16,57 +16,132 @@ body::-webkit-scrollbar {
 }
 
 
+/* attempted at video background or hero image 
+Update: successful :)
+but now some of my things r broken T~T
+tears*/
+
+
+.bg{
+  width:100%; 
+  height:auto 
+}
+
+.videoContainer{
+  width:100%; 
+  margin:auto; 
+  display:block; 
+  position: relative;
+}
+
+.videoOverlay{
+  position: absolute; 
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
 /* nav bar */
+.navi{
+  margin-left: 6%;
+}
+
 .menu {
   padding: 5%;
-  background-color: #D0D7DB;
+  background-color: transparent;
 
 }
 
+/* dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 6vh 8vh 5vh 11vh;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #bfd0e0d2;
+  margin-left: 2vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+.dropdownContent a {
+  color: white;
+  padding: 2vh;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdownContent a:hover {
+  background-color: #c4d0db
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+  
+}
+
 /* breaking the list */
+
+
 nav {
   width: 100%;
-
   list-style-type: none;
   display: inline-flex;
   padding: 0% 2%;
+  color: rgb(255, 255, 255);
 
 }
 
 /* creatin the underlined animation */
 nav a{
   /* deals with the color of underline and position */
-  color: rgb(0, 0, 0);
-
+  color: rgb(255, 255, 255);
   text-decoration: none;
- 
   display: inline-block;
-
   position: relative;
 }
 
 nav a:after{
   /* deals with the animation portion */
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
+  content: '';
   position: absolute;
-  background: rgb(45, 7, 7);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
+
 
 nav a:hover:after { 
-  width: 100%; 
-  left: 0; 
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
+/* done with line animations */
 
 .title {
   margin: 10% 5%;
+ color: white;
+}
+
+.navResum {
+  margin-left: 5vh;
+  
 }
 
 .navHome,
@@ -74,20 +149,22 @@ nav a:hover:after {
 .navCon,
 .navAbt,
 .navResum {
-  margin: 10% 35%;
+  margin: 10% 40%;
   width: 100%;
-  color: black;
+  color: rgb(255, 255, 255);
+
 }
 
 nav a {
   text-decoration: none;
   font-size: 24px;
-  font-family: monospace;
-  color: black;
+
+
 }
 
-/* formatting body */
+/* formatting hero */
 .flex-container {
+  background-color: #D0D7DB;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -96,21 +173,24 @@ nav a {
 
 /* animation (header or hero)*/
 .animation {
+  color: white;
   height: 30vh;
 }
 
 .hero{
+  color: white;
   margin-top: 11%;
 }
 
 
 .welcome{
   height: 30vh;
+  color: white;
 }
 
 
 .logo {
- 
+ color: white;
   font-size: 6em;
   padding: 0 0.3em;
   display: block;
@@ -119,14 +199,16 @@ nav a {
 
 /* styling the words itself */
 .firstName {
+  background-color: transparent;
   margin: 3% 7% 0%;
-  background-color: #83c9ff07;
-  color: #000;
+  color: white;
+  
 }
 
 .lastName {
   margin: 0% 7% 0%;
   background-color: transparent;
+  color: white;
 
 }
 
@@ -143,6 +225,7 @@ nav a {
   -o-animation-duration: 3s;
   animation-name: fadein;
   animation-duration: 3s;
+
 }
 
 
@@ -151,12 +234,14 @@ nav a {
 /* animations for the summary */
 .quest {
   margin: 0% 10% 0%;
-  background-color: #83c9ff07;
-  color: #000;
+  background-color: transparent;
+  color: white;
+
 }
 
 .summary {
   margin: 0% 10% 0%;
+  color: white;
   background-color: transparent;
 
 }
@@ -164,6 +249,7 @@ nav a {
 /* actual animations, the keyframe setting */
 
 .welcome {
+  background-color: transparent;
   -webkit-animation-name: fadein;
   -webkit-animation-duration: 3s;
   -moz-animation-name: fadein;
@@ -239,13 +325,15 @@ nav a {
   }
 }
 
-/* formatting the body (summary portion) */
+/* formatting the summary portion*/
 .summary a {
+  background-color: transparent;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .summary {
+  background-color: transparent;
   font-size: large;
 }
 
@@ -260,6 +348,7 @@ nav a {
   margin-top: 3%;
 } 
 
+
 .pot{
   height: 53vh;
   width: 70vh;
@@ -268,7 +357,7 @@ nav a {
 
 a{
  text-decoration: none; 
- color: #000;
+ color: rgb(255, 255, 255);
 }
   
 .container {
@@ -283,6 +372,7 @@ a{
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  padding-bottom: 6%;
 }
 
 .middle {
@@ -306,12 +396,186 @@ a{
   opacity: 100%;
 }
 
-.text{
-  
+
+
+/* abt page */
+.intro{
+  margin: 0% 9% 7% 10%;
+  font-size: 3vh;
+  color: #ffffff;
+  background-color: #313941bd;
+  padding: 5%; 
+}
+
+.huro{
+width: 100%;
+}
+
+/* attempt at an image caro */
+
+/* other */
+.otherInfo{
+  width: 100%;
+  font-size: 2em;
+  margin-top: 3%;
+  padding: 5% 42%;
+  color: #fff;
+  height: 20vh;
+  background-color: #bdcbd8;
+}
+
+/* animation */
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.p{
+  width: 70%;
+  height: 40%;
+  margin-top: 3%;
+  background-color: #1e3f8525;
+}
+
+.pboxes{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0% 3% 0% 2%;
+  padding-left: 15%;
+}
+
+.pcontainer{
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  margin-top: 5vh;
+}
+
+
+.pcontainer > img {
+  position: absolute;
+  top: 0;
+  padding-left: 4%;
+  padding-bottom: 4%;
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+.pbg{
+  width: 100%;
+  height:100vh;
+  opacity: 90%;
+}
+
+.pictureContainer{
+  width:100%; 
+  margin:auto; 
+  display:block; 
+  position: relative;
+}
+
+.pictureOverlay{
+  position: absolute; 
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.imgTxt{
+margin-left: 20%;
+padding: 4%;
+font-size: 2vh;
+color: #fff;
+}
+
+
+/* resume pg */ 
+.link{
+  padding-left: 40%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.resumee{
+  padding: 5% 5% 5% 10%;
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 70%;
+  font-size: 2vh;
+  color: #fff;
+  background-color: #bdcbd8;
+}
+
+.lor{
+  padding: 5%;
+  margin-left: 15%;
+  width: 70%;
+  color: #fff;
+  margin-top: 5%;
+  font-size: 2vh;
+  background-color: #bdcbd8;
+}
+
+.holder{
+  height: 90vh;
+}
+
+/* portfolio page */
+.porbg{
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
 }
 
 
 /* footer */
+
+/* abt pg footer */
+.footer {
+  margin: 3% 0%;
+  height: 10vh;
+  width: 100%;
+   display: flex; 
+  flex-direction: row;
+}
+
 footer {
   height: 10vh;
   width: 100%;
@@ -337,9 +601,7 @@ footer {
 
 /* icons for footer */
 .iconFoot{
-  margin-left:20%;
-  
-  
+  margin-left:20%;  
 }
 
 ul {
@@ -371,6 +633,7 @@ ul li a {
 
 ul li a .icon {
   position: relative;
+  /* color of the icon */
   /* color: #262626; */
   transition: .5s;
   z-index: 3;

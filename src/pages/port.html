@@ -1,49 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
     <link rel="stylesheet" href="/src/front-end/style.css">
-    <nav>
-        <div class="nav">
-               
-         <nav class="navi">
-            <div class="title">LY</div>
-            <div class="navHome"><a href="/src/index.html">Home</a></div>
-            <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
-            <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
-            <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
-            <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
-
-         </ul>
-          </div>
-    </nav>
+   
 </head>
 
-<body>
-    <div class="heroImgs"><img src="" alt="homeHero"></div>
-    <div class="works">My Works</div>
+<body>  
 
-    <div class="chorno">Chronoshift
-        <div="hobbyCaro"></div>
+<header>
+
+    <div class="videoContainter">
+            <video autoplay muted loop class="bg">
+                <source src="/src/videos/Pexels Videos 1257863.mp4" type="video/mp4">
+            </video>
+
+            <div class="videoOverlay">
+              <nav>
+                <div class="nav">
+
+                    <nav class="navi">
+                        <div class="dropdown">
+                            <div class="title">LY</div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navHome"><a href="/src/index.html">Home</a></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
+                            <div class="dropdownContent">
+                                <a href="/src/projects/calc.html">Calculator</a>
+                                <a href="/src/projects/chrono.html">Chronoshift</a>
+                                <a href="/src/projects/game.html">Interactive Game Story</a>
+                                <a href="/src/projects/tour.html">Tourism Website</a>
+                            </div>
+                        </div>   
+
+                        <div class="dropdown">
+                            <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
+                        </div>
+
+                    </nav>
+                </div>
+        </nav>
+
+                <div class="hero">
+                        <div class="animation">
+                            <span class="logo firstName">Welcome!</span>
+                            <span class="logo lastName">Projects Below!</span>
+                        </div>
+
+                        <div class="welcome">
+                            <div class="quest">
+                                <h1> Who Am I?</h1>
+                            </div>
+                            <div class="summary">
+                                <p>Greetings, my name is Lucy Yang. I am currently a student at CART and Buchanan High School and I plan
+                                    on
+                                    pursuing a career in Software Development. Feel free to explore my projects below!</p>
+                                <p>Thank you for visiting my Portfolio! <strong><a href="/src/pages/about.html">Learn More about
+                                            me!</a></strong></p>
+                            </div>
+                        </div>
+                </div>
+
+              </div>
     </div>
 
-    <div class="tour">Tourism Website
-        <div="persCaro"></div>
+        
+</header>
+        <!-- https://codepen.io/ssmkhrj/pen/MWjpWKp?editors=1100
+        link for chosen hover -->
+ <div class="flex-container">
+<div class="boxes">  
+      
+    <div class="first">
+            <div class="container">
+                <div class="image"><img class="pot" src="/src/imgs/bridge-gd357dc784_640.jpg" alt="About Me" ></div>
+                    <div class="middle">
+                     <div class="text"><a href="/src/projects/calc.html">Calculator</a></div>
+                    </div>  
+            </div>    
+            
+
+            <div class="container">
+                <div class="image"><img class="pot" src="/src/imgs/tea-time-3240766_640.jpg" alt="Portfolio" ></div>
+               <div class="middle">
+                <div class="text"><a href="/src/projects/game.html">Interactive Game Story</a></div>
+                </div>
+             </div>    
     </div>
 
-    <div class="gameStory">Interactive Game Story
-        <div="postCaro"></div>
-    </div>
-
-    <div class="calc">Calculator
-        <div="otherCaro"></div>
-    </div>
-
+    <div class="second">
+            <div class="container">
+                <div class="image"> <img class="pot" src="/src/imgs/notepad-gde1097708_640.jpg" alt="Resume"></div>
+                <div class="middle">
+                    <div class="text"><a href="/src/projects/chrono.html">Chronoshift</a></div>
+            </div>
+            </div>
     
 
+                   
+            <div class="container">
+                <div class="image"> <img class="pot" src="/src/imgs/books-g3e8692a04_640.jpg" alt="Contact"></div>
+                    <div class="middle">
+                  <div class="text"><a href="/src/projects/tour.html">Tourism</a></div>
+                </div>
+             </div>      
+         
+        </div> 
+    </div>
+ 
+    
+        <!-- <div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div> -->
+    
 </body>
 
 <footer>
@@ -79,5 +168,8 @@
              
          
     </div>
-
+</div>
 </footer>
+</div>
+<!-- template -->
+<div class=""></div>

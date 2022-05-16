@@ -6,85 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
     <link rel="stylesheet" href="/src/front-end/style.css">
-    <nav>
-        <div class="nav">
-               
-         <nav class="navi">
-            <div class="title">LY</div>
-            <div class="navHome"><a href="/src/index.html">Home</a></div>
-            <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
-            <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
-            <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
-            <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
 
-         </ul>
-          </div>
-    </nav>
 </head>
 
-<body>
-    <div class="heroImgs"><img src="" alt="homeHero"></div>
-   
+<body>  
 
-    <div class="social">Socials
-        <div class="media">Media Here!</div>
-    </div>
-
-    <div class="contact">Contact
-        <div class="email">
-            <label for="email">Email:</label>
-            <input type="text" id="em" name="email" placeholder="Email....">
-        </div>
-
-        <div class="name">
-            <label for="name">Name:</label>
-            <input type="text" id="nom" name="name" placeholder="name....">
-        </div>
-
-        <div class="msg"></div>
-            <label for="message">Message:</label>
-            <input type="text" id="ms" name="message" placeholder="message....">
-
-        </div>
-
-        <div class="submit">
-            <input type="submit" value="Submit">
-        </div>
-</body>
-
-
-<footer>
-    <!-- <div class="footer"> -->
-        <div class="begfoot">
-            Contact: <br> (559) 578-2940 <br>
-            Lucy.Yang@Student.cart.org
-        </div>
-
+    <header>
     
-        <div class="iconFoot">
-            <!-- using icons from reference stylesheet -->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-            <ul>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-facebook-f icon"></i>    </a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter icon"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                <li>
-                  <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
-              </ul>
-             <div class="rightfoot">@2022 Lucy Yang, All Rights Reserved</div>
+        <div class="videoContainter">
+                <video autoplay muted loop class="bg">
+                    <source src="/src/videos/pexels-ron-lach-6938926.mp4" type="video/mp4">
+                </video>
+    
+                <div class="videoOverlay">
+                  <nav>
+                    <div class="nav">
+    
+                        <nav class="navi">
+                            <div class="dropdown">
+                                <div class="title">LY</div>
+                            </div>
+    
+                            <div class="dropdown">
+                                <div class="navHome"><a href="/src/index.html">Home</a></div>
+                            </div>
+    
+                            <div class="dropdown">
+                                <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
+                            </div>
+    
+                            <div class="dropdown">
+                                <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
+                                <div class="dropdownContent">
+                                    <a href="/src/projects/calc.html">Calculator</a>
+                                    <a href="/src/projects/chrono.html">Chronoshift</a>
+                                    <a href="/src/projects/game.html">Interactive Game Story</a>
+                                    <a href="/src/projects/tour.html">Tourism Website</a>
+                                </div>
+                            </div>   
+    
+                            <div class="dropdown">
+                                <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
+                            </div>
+    
+                            <div class="dropdown">
+                                <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
+                            </div>
+    
+                        </nav>
+                    </div>
+            </nav>
+    
+                    <div class="hero">
+                            <div class="animation">
+                                <span class="logo firstName">Welcome!</span>
+                                <span class="logo lastName">To my Personal Portfolio</span>
+                            </div>
+    
+                            <div class="welcome">
+                                
+                                <div class="summary">
+                                    <p>Greetings, my name is Lucy Yang. I am currently a student at CART and Buchanan High School and I plan
+                                        on
+                                        pursuing a career in Software Development. Feel free to contact me down below!</p>
+                                    <p>Thank you for visiting my Portfolio! <strong><a href="/src/pages/about.html">Learn More about
+                                                me!</a></strong></p>
+                                </div>
+                            </div>
+                    </div>
+    
+                  </div>
         </div>
+    
+            
+    </header>
+          
+     <div class="flex-container">
+    
+        </div>
+     
         
-        <!-- </div> -->
-    <div class="endFoot"> <a href="/src/pages/port.html"> Portfolio |</a> <a href="/src/pages/about.html">About 
-                | </a><a href="/src/info/resume.html"> Resume |</a> <a href="/src/pages/contact.html">Contact |</a>
+    </body>
+    
+    <footer>
+        <!-- <div class="footer"> -->
+            <div class="begfoot">
+                Contact: <br> (559) 578-2940 <br>
+                Lucy.Yang@Student.cart.org
+            </div>
+    
+        
+            <div class="iconFoot">
+                <!-- using icons from reference stylesheet -->
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+                <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fab fa-facebook-f icon"></i>    </a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter icon"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                  </ul>
+                 <div class="rightfoot">@2022 Lucy Yang, All Rights Reserved</div>
+            </div>
+            
+            <!-- </div> -->
+        <div class="endFoot"> <a href="/src/pages/port.html"> Portfolio |</a> <a href="/src/pages/about.html">About 
+                    | </a><a href="/src/info/resume.html"> Resume |</a> <a href="/src/pages/contact.html">Contact |</a>
+                 
              
-         
+        </div>
     </div>
-
-</footer>
+    </footer>
+    </div>

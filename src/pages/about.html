@@ -6,83 +6,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio </title>
     <link rel="stylesheet" href="/src/front-end/style.css">
-    <nav>
-        <div class="nav">
-               
-         <nav class="navi">
-            <div class="title">LY</div>
-            <div class="navHome"><a href="/src/index.html">Home</a></div>
-            <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
-            <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
-            <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
-            <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
+    <script src="/src/front-end/script.js"></script>
 
-         </ul>
-          </div>
-    </nav>
 </head>
 
 <body>
-    <div class="heroImgs"><img src="" alt="homeHero"></div>
-    <div class="intro">	Hello, my name is Lucy Yang, and I will graduate from Buchanan High School in May of  2023. As of right now,  I am attending the Center for Advanced Research and Technology to get the hang of programming and exploring its different stems. Currently, I am enrolled in Web Applications and next year I will be entering Game Design.
-        This year in Web Applications, we, as a whole, learned to collaborate and communicate with peers around us in order to complete a task together. One of the major projects we did was a Tourism website. This project highlighted the usage of media inquiries and displayed the history, cultures, holidays, and location of different countries. Another project we are working on is an interactive game story, for this project we are working in groups of 2. An interactive story game basically moves according to the user's choices and can result in different endings. This project is used to highlight the usage of JavaScript and the way it can make a website interactive.  Over at my home school, I volunteer alongside my clubs like creating stockings for Christmas or serving as a waiter for a Crab Fest, and on my days off, I occasionally would work jobs from my aunt. 
-        Growing up, I have always had pets like fishes, dogs, cats, and hamsters, so I am a big animal lover. I love spending time with family, having close connections with them gives me a place to call home. Lastly, in my free time I like to game, browse the internet, and read.
-        You have reached the end of my ‘About Me’ page, on my website I have other resources available like my resume, work samples, and contact information. Feel free to explore more on my portfolio and connect with me.
-    </div>
+   
+    
+    <div class="videoContainter">
+        <video autoplay muted loop class="bg">
+            <source src="/src/videos/Pexels Videos 2335977.mp4" type="video/mp4">
+        </video>
 
-    <div class="hobbies">Hobbies
-        <div="hobbyCaro"></div>
-    </div>
+        <div class="videoOverlay">
+          <nav>
+            <div class="nav">
 
-    <div class="personal">Personal
-        <div="persCaro"></div>
-    </div>
+                <nav class="navi">
+                    <div class="dropdown">
+                        <div class="title">LY</div>
+                    </div>
 
-    <div class="postSec">Post-Secondary Plan
-        <div="postCaro"></div>
-    </div>
+                    <div class="dropdown">
+                        <div class="navHome"><a href="/src/index.html">Home</a></div>
+                    </div>
 
-    <div class="other">Other
-        <div="otherCaro"></div>
-    </div>
+                    <div class="dropdown">
+                        <div class="navAbt"><a href="/src/pages/about.html">About</a></div>
+                    </div>
 
+                    <div class="dropdown">
+                        <div class="navPort"><a href="/src/pages/port.html">Portfolio</a></div>
+                        <div class="dropdownContent">
+                            <a href="/src/projects/calc.html">Calculator</a>
+                            <a href="/src/projects/chrono.html">Chronoshift</a>
+                            <a href="/src/projects/game.html">Interactive Game Story</a>
+                            <a href="/src/projects/tour.html">Tourism Website</a>
+                        </div>
+                    </div>   
+
+                    <div class="dropdown">
+                        <div class="navResum"><a href="/src/info/resume.html">Resume</a></div>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="navCon"><a href="/src/pages/contact.html">Contact</a></div>
+                    </div>
+
+                </nav>
+            </div>
+    </nav>
+
+            <div class="hero">
+                    <div class="animation">
+                        <span class="logo firstName">Welcome!</span>
+                        <span class="logo lastName"> More About Me!</span>
+                    </div>
+
+                    <div class="welcome">
+                        <div class="summary">	
+                            Hello, my name is Lucy Yang, and I will graduate from Buchanan High School in May of  2023. As of right now,  I am attending the Center for Advanced Research and Technology to get the hang of programming and exploring its different stems. Currently, I am enrolled in Web Applications and next year I will be entering Game Design.
+                            This year in Web Applications, we, as a whole, learned to collaborate and communicate with peers around us in order to complete a task together. One of the major projects we did was a Tourism website. This project highlighted the usage of media inquiries and displayed the history, cultures, holidays, and location of different countries. Another project we are working on is an interactive game story, for this project we are working in groups of 2. An interactive story game basically moves according to the user's choices and can result in different endings. This project is used to highlight the usage of JavaScript and the way it can make a website interactive.  Over at my home school, I volunteer alongside my clubs like creating stockings for Christmas or serving as a waiter for a Crab Fest, and on my days off, I occasionally would work jobs from my aunt. 
+                            Growing up, I have always had pets like fishes, dogs, cats, and hamsters, so I am a big animal lover. I love spending time with family, having close connections with them gives me a place to call home. Lastly, in my free time I like to game, browse the internet, and read.
+                            You have reached the end of my ‘About Me’ page, on my website I have other resources available like my resume, work samples, and contact information. Feel free to explore more on my portfolio and connect with me.
+                        
+                        </div>
+                           
+                        </div>
+                    </div>
+            </div>
+
+          </div>
+</div>
     
 
-</body>
-
-
-<footer>
-    <!-- <div class="footer"> -->
-        <div class="begfoot">
-            Contact: <br> (559) 578-2940 <br>
-            Lucy.Yang@Student.cart.org
+ <div class="flex-container">
+        <div class="otherInfo">
+            Other Information
         </div>
-
     
-        <div class="iconFoot">
-            <!-- using icons from reference stylesheet -->
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-            <ul>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-facebook-f icon"></i>    </a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter icon"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                <li>
-                  <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
-              </ul>
-             <div class="rightfoot">@2022 Lucy Yang, All Rights Reserved</div>
-        </div>
+            <div class="pboxes">  
+                
+                    <div class="p">
+                            <div class="pcontainer">
+                                    <img src="/src/imgs/20210921_115530.jpg" alt="" class="pic" width="250px" height="300px">
+                                    <img src="/src/imgs/20211123_173637.jpg" alt="" class="pic" width="250px" height="300px">
+                                    <img src="/src/imgs/20220429_014545.jpg" alt="" class="pic" width="250px" height="300px">
+                                    <img src="/src/imgs/20220501_131257.jpg" alt="" class="pic" width="250px" height="300px">
+                                    <img src="/src/imgs/IMG_20220416_100206_199.jpg" alt="" class="pic" width="250px" height="300px">
+                                    <img src="/src/imgs/IMG_20220416_100205_929.jpg" alt="" class="pic" width="250px" height="300px">
+                                    <img src="/src/imgs/IMG_1903.JPEG" alt="" class="pic" width="250px" height="300px"> 
+
+                                    <div class="imgTxt">
+                                        <strong>Personal Life</strong><br><br>
+                                    On my free time, I tend to be on browse through the internet and social media. My freshmen year at Buchanan, I played badminton and would love to continue if time allows. If my pc would permit, I would like to game, however, my pc is slightly broken. As for family, I was born into a family of 8 and I am the second youngest. I am closest to my two cousins whom I talk to everyday and hang out with every so often. My family are big animal lovers and I grew up with them my whole life. 
+                                    </div>
+                            </div>   
+                            
+                            
+                    </div>
+                
+                    <div class="p">
+                        <div class="pcontainer">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                            <img src="/src/imgs/architecture-gaf72a4444_640.jpg" alt="" class="pic " width="250px" height="300px">
+                               
+                            
+                                <div class="imgTxt">
+                                    <strong>Post-Secondary Plan</strong><br><br>
+                                    After graduating High-School, I plan on pursuing a degree in Computer Science as a software developer. As for college, I'm looking towards attending Cal Poly and potentially transferring over to somewhere else, or going to Fresno State and from there transferring over. While pursuing my degree, I plan on gaining more experience in the developer field and finding a job relating with said field that can provide me with financial stability.
+                                </div>
+                        </div>                       
+                    </div>
+
+                    <div class="p">
+                        <div class="pcontainer">
+                            <img src="/src/imgs/library-g41f469067_640.jpg" alt="" class="pic" width="250px" height="300px">
+                            <img src="/src/imgs/library-g41f469067_640.jpg" alt="" class="pic" width="250px" height="300px">
+                            <img src="/src/imgs/library-g41f469067_640.jpg" alt="" class="pic" width="250px" height="300px">
+                            <img src="/src/imgs/library-g41f469067_640.jpg" alt="" class="pic" width="250px" height="300px">
+                            <img src="/src/imgs/library-g41f469067_640.jpg" alt="" class="pic" width="250px" height="300px">
+                            <img src="/src/imgs/library-g41f469067_640.jpg" alt="" class="pic" width="250px" height="300px">
+                            
+                            
+                              
+                                <div class="imgTxt">
+                                    <strong>Awards and Academics</strong><br><br>
+                                    At Buchanan High School, I am maintaining a 4.1 gpa and currently would be considered a salutatorian. For CART, I am maintaining a 4.0 gpa and working to keep up on my academics. I am involved with a club at Buchanan called the Interact Club, this club is just kids volunterring along with the Rotary club of Downtown Clovis.
+                                </div>
+                        </div>                       
+                     </div>
+
+            
         
-        <!-- </div> -->
-    <div class="endFoot"> <a href="/src/pages/port.html"> Portfolio |</a> <a href="/src/pages/about.html">About 
-                | </a><a href="/src/info/resume.html"> Resume |</a> <a href="/src/pages/contact.html">Contact |</a>
-             
-         
-    </div>
+            </div>
 
-</footer>
+               
+         
+        
+        
+        <footer>
+            <div class="footer">
+                <div class="begfoot">
+                    Contact: <br> (559) 578-2940 <br>
+                    Lucy.Yang@Student.cart.org
+                </div>
+        
+            
+                <div class="iconFoot">
+                    <!-- using icons from reference stylesheet -->
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+                    <ul>
+                        <li>
+                          <a href="#">
+                            <i class="fab fa-facebook-f icon"></i>    </a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter icon"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                        <li>
+                          <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                      </ul>
+                     <div class="rightfoot">@2022 Lucy Yang, All Rights Reserved</div>
+                </div>
+                
+            
+                <div class="endFoot"> <a href="/src/pages/port.html"> Portfolio |</a> <a href="/src/pages/about.html">About 
+                            | </a><a href="/src/info/resume.html"> Resume |</a> <a href="/src/pages/contact.html">Contact |</a>
+                        
+                    
+                </div>
+           </div>  
+           
+        </div>
+        </footer>
+        
+    </body>
