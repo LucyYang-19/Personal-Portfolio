@@ -544,7 +544,7 @@ color: #fff;
 }
 
 .lor{
-  padding: 5%;
+  padding: 9%;
   margin-left: 15%;
   width: 70%;
   color: #fff;
@@ -570,14 +570,12 @@ color: #fff;
   background-color: #bdcbd8;
   padding: 1%;
   width: 90%;
-  margin: 5% 0% ;
+  margin: 5% 0% 5% 5% ;
   color: #fff;
   font-size: 1.5em;
 }
 
-
-
-
+/* image caro */
 
 
 /* contact form */
@@ -803,93 +801,14 @@ ul li:nth-child(3) a:before {
 /* MEDIA QUERIES THAT WONT WORK */
 /* TABLET */
 @media screen and (max-width: 992px){
-  .navi{
-    margin-left: 1%;
-  }
   
-  .menu {
-    
-    background-color: transparent;
-  
-  }
-  
-
-  nav {
-    width: 100%;
-    list-style-type: none;
-    display: inline-flex;
-   
-    color: rgb(255, 255, 255);
-  
-  }
-  
-  
-  nav a:after{
-    /* deals with the animation portion */
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  
-  nav a:hover:after { 
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
 
 }
 
 
 /* PHONW   */
 @media screen and (max-width: 480px) {
-  .navi{
-    margin-left: 1%;
-  }
   
-  .menu {
-    
-    background-color: transparent;
-  
-  }
-  
-
-  nav {
-    width: 100%;
-    list-style-type: none;
-    display: inline-flex;
-   
-    color: rgb(255, 255, 255);
-  
-  }
-  
-  
-  nav a:after{
-    /* deals with the animation portion */
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  
-  nav a:hover:after { 
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
 
  }
 
