@@ -27,6 +27,7 @@ tears*/
   height:auto 
 }
 
+/* for all pages, formatting the video in the header (all in one class) */
 .videoContainer{
   width:100%; 
   margin:auto; 
@@ -65,6 +66,7 @@ tears*/
   margin: 6vh 8vh 5vh 11vh;
 }
 
+/* makes the dropdown */
 .dropdownContent {
   display: none;
   position: absolute;
@@ -74,6 +76,7 @@ tears*/
   
 }
 
+/* colors and formats the links */
 .dropdownContent a {
   color: white;
   padding: 2vh;
@@ -91,9 +94,8 @@ tears*/
   
 }
 
+/* deals with the classes in the nav bar */
 /* breaking the list */
-
-
 nav {
   width: 100%;
   list-style-type: none;
@@ -134,6 +136,7 @@ nav a:hover:after {
 
 /* done with line animations */
 
+/* styling the nav spacing */
 .title {
   margin: 10% 5%;
  color: white;
@@ -162,7 +165,7 @@ nav a {
 
 }
 
-/* formatting hero */
+/* formatting "body" */
 .flex-container {
   background-color: #D0D7DB;
   display: flex;
@@ -197,7 +200,7 @@ nav a {
   ;
 }
 
-/* styling the words itself */
+/* styling the words itself getting it prepped for animations*/
 .firstName {
   background-color: transparent;
   margin: 3% 7% 0%;
@@ -213,7 +216,7 @@ nav a {
 }
 
 /* actual animations, the keyframe setting */
-
+/* webkit, moz, etc r basically a rendering engine; webkit for chrome moz for firefox o for opera and ms for internet explorer */
 .logo {
   -webkit-animation-name: fadein;
   -webkit-animation-duration: 3s;
@@ -247,7 +250,7 @@ nav a {
 }
 
 /* actual animations, the keyframe setting */
-
+/* webkit, moz, etc r basically a rendering engine for sepcific browsers; webkit for chrome moz for firefox o for opera and ms for internet explorer */
 .welcome {
   background-color: transparent;
   -webkit-animation-name: fadein;
@@ -262,6 +265,8 @@ nav a {
   animation-duration: 3s;
 }
 
+/* keyframes are the starting and end point in transitions */
+/* made specific keyframes for spceified browsesrs */
 @-webkit-keyframes fadein {
 
   /* negative fades in from left and positive fades in from right */
@@ -339,6 +344,7 @@ nav a {
 
 
 /* body (actual hyperlinks)*/
+/* home pg or index */
 
 .boxes {
   display: flex;
@@ -348,7 +354,7 @@ nav a {
   margin-top: 3%;
 } 
 
-
+/* img classes */
 .pot{
   height: 53vh;
   width: 70vh;
@@ -375,6 +381,7 @@ a{
   padding-bottom: 6%;
 }
 
+/* text overlaying the image class */
 .middle {
   font-size: 5vh;
   transition: .5s ease;
@@ -388,6 +395,7 @@ a{
   padding: 1%;
 }
 
+/* hover on image that makes the opacity lower */
 .container:hover .image {
   opacity: 25;
 }
@@ -425,6 +433,7 @@ width: 100%;
 }
 
 /* animation */
+/* keyframes explained above: defines transition end point and starting points */
 @keyframes display {
   0% {
     transform: translateX(200px);
@@ -448,6 +457,7 @@ width: 100%;
   }
 }
 
+/* the p, pboxes, pcontainers, those are all the images in a carosuel */
 .p{
   width: 70%;
   height: 40%;
@@ -470,7 +480,7 @@ width: 100%;
   margin-top: 5vh;
 }
 
-
+/* > specifies what in the container we r targetting, in this case the img within the  containter */
 .pcontainer > img {
   position: absolute;
   top: 0;
@@ -480,6 +490,7 @@ width: 100%;
   animation: display 10s infinite;
 }
 
+/* again, targetting  */
 img:nth-child(2) {
   animation-delay: 2s;
 }
@@ -533,6 +544,7 @@ color: #fff;
   color: rgb(255, 255, 255);
 }
 
+/* resume */
 .resumee{
   padding: 5% 5% 5% 10%;
   margin-left: 15%;
@@ -543,6 +555,7 @@ color: #fff;
   background-color: #bdcbd8;
 }
 
+/* letter of recommendation */
 .lor{
   padding: 9%;
   margin-left: 15%;
@@ -579,8 +592,9 @@ color: #fff;
 color: #253d52;
 }
 
-/* image caro */
-
+/* image caro (attemped js and failed and just died inside, imgs would load but they wuld all show */
+/* ended up going with a css one, sadly */
+/* used # for id for input */
 #slider {
   position: relative;
   width: 40%;
@@ -611,8 +625,6 @@ input[type=radio]:nth-child(5) {
 input[type=radio]:checked {
   opacity: 1;
 }
-
-
 
 
 #slider label,
@@ -690,61 +702,8 @@ input[type=radio]:checked {
 
 
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
  
-  font-size: 18px;
-  
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.158);
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-
-
+/* contact pg */
 /* contact form */
 h1{
   text-align: center;
@@ -800,6 +759,7 @@ textarea{
   -o-transition: all 0.30s ease-in-out;
   outline: none;  
 }
+
 .form-style .long{
   width: 100%;
 }
@@ -822,16 +782,15 @@ display: flex;
 flex-direction: row;
 }
 
+/* social media or contact information  */
 .socialMedia{
   font-size: 2em;
-  background-color: #a7bac7;
+  background-color: #a7bac74f;
   margin: 4%;
-  padding-top: 4%;
+  padding: 4% 5% 4% 0% ;
   width: 45%;
   height: 23rem;
 }
-
-/* image caro */
 
 
 
@@ -909,6 +868,7 @@ ul li a .icon {
   z-index: 3;
 }
 
+/* makes the logo or icon actually flip on hovering over */
 ul li a:hover .icon {
   transform: rotateY(360deg);
 }
@@ -925,6 +885,7 @@ ul li a:before {
   z-index: 2;
 }
 
+/* each of the icons  */
 ul li a:hover:before {
   top: 0;
 }
@@ -964,8 +925,16 @@ ul li:nth-child(3) a:before {
   color: #000;
 }
 
+.endFoot a:hover{
+  color: #ffffff;
+}
 
-/* MEDIA QUERIES THAT WONT WORK */
+/* MEDIA QUERIES THAT WONT WORK
+that will possibly work better...
+mMmH well then
+ */
+ 
+
 /* TABLET */
 @media screen and (max-width: 992px){
   

@@ -83,61 +83,66 @@
           
      <div class="flex-container">
 
-    <div class="bod">
-        <div class="socialMedia">
-            <pre>
-            Email: Lucy.Yang@Student.Cart.Org
+    
+<!-- contains both the information "card" and the validation form linked to js, validationf or is for the form that users can type things
+warning, it will reload the page if u sumbit, lol so absically nth happens -->
+        <div class="bod">
+            <div class="socialMedia">
+                <pre>
+                Email: Lucy.Yang@Student.Cart.Org
 
-            LinkedIn: <a href="https://www.linkedin.com/in/lucy-yang-47a852239/">Lucy Yang</a>
-        </pre>
-        </div>
+                LinkedIn: <a href="https://www.linkedin.com/in/lucy-yang-47a852239/">Lucy Yang</a>
 
-                <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
-                    <table class="form-style">
-                        <tr>
-                        <td>
-                            <label>
-                                Your name <div class="required">*</div>
-                            </label>
-                        </td>
-                        <td>
-                            <input type="text" name="name" class="long"/>
-                            <div class="error" id="errorname"></div>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <label>
-                                Your email address <div class="required">*</div>
-                            </label>
-                        </td>
-                        <td>
-                            <input type="email" name="email" class="long"/>
-                            <div class="error" id="erroremail"></div>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <label>
-                                Message <div class="required">*</div>
-                            </label>
-                        </td>
-                        <td>
-                            <textarea name="message" class="long field-textarea"></textarea>
-                            <div class="error" id="errormsg"></div>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td></td>
-                        <td>
-                            <input type="submit" value="Send">      
-                            <input type="reset" value="Reset"> 
-                        </td>
-                        </tr>
-                    </table>
-                </form>
-        </div>
+                Number: (559) 578- 2940
+            </pre>
+            </div>
 
+                    <form name="myForm"  onsubmit="return validateForm()">
+                        <table class="form-style">
+                            <tr>
+                            <td>
+                                <label>
+                                    Your name <div class="required">*</div>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="name" class="long"/>
+                                <div class="error" id="errorname"></div>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <label>
+                                    Your email address <div class="required">*</div>
+                                </label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" class="long"/>
+                                <div class="error" id="erroremail"></div>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <label>
+                                    Message <div class="required">*</div>
+                                </label>
+                            </td>
+                            <td>
+                                <textarea name="message" class="long field-textarea"></textarea>
+                                <div class="error" id="errormsg"></div>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Send">      
+                                <input type="reset" value="Reset"> 
+                            </td>
+                            </tr>
+                        </table>
+                    </form>
+            </div>
+       
         
       <footer>
         <!-- <div class="footer"> -->
